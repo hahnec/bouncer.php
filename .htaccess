@@ -1,0 +1,7 @@
+# Route every request through index.php (front controller).
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]
+
+# Never serve anything from files/ directly.
+RedirectMatch 403 ^/files/

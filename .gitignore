@@ -1,0 +1,27 @@
+  # --- exchange specifics ---                                                                                                                                                                
+  # Shared files & runtime state: never commit what you're sharing or lockout data                                                                                                            
+  files/*                                                                                                                                                                                     
+  !files/.gitkeep                                                                                                                                                                             
+  !files/.htaccess                                                                                                                                                                            
+                                                                                                                                                                                              
+  # Local password override (if you split PASS_HASH into a config file)                                                                                                                       
+  config.php                                                                                                                                                                                  
+  config.local.php                                                                                                                                                                            
+                                                                                                                                                                                              
+  # --- OS / editor noise ---                                                                                                                                                                 
+  .DS_Store                                                                                                                                                                                   
+  Thumbs.db                                                                                                                                                                                   
+  desktop.ini                                                                                                                                                                                 
+  *~                                                                                                                                                                                          
+  *.swp                                                                                                                                                                                       
+  *.swo                                                                                                                                                                                       
+  .idea/                                                                                                                                                                                      
+  .vscode/                                                                                                                                                                                    
+                                                                                                                                                                                              
+  # --- PHP tooling (if you ever add composer) ---                                                                                                                                            
+  /vendor/                                                                                                                                                                                    
+  composer.lock                                                                                                                                                                               
+                                                                                                                                                                                              
+  # --- Logs & temp ---                                                                                                                                                                       
+  *.log                                                                                                                                                                                       
+  *.tmp  files/.fails.json
